@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, SpeedLimitMarker!</string>
+    <string name="app_name">Speed Limit Marker</string>
+
+    <string name="back">Back</string>
+    <string name="clear">Clear</string>
+
+    <string name="decrease">Decrease</string>
+    <string name="increase">Increase</string>
+    <string name="mark">Mark</string>
+</resources>
