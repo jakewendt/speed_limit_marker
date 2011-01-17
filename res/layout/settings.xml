@@ -35,4 +35,16 @@
 	<Spinner android:id="@+id/mph_kph_language"
 		android:layout_height="wrap_content" 
 		android:layout_width="fill_parent"/>
+		
+	<TextView android:text="@string/distance_label"
+		android:layout_height="wrap_content" 
+		android:layout_width="fill_parent"/>
+	<Spinner android:id="@+id/distance"
+		android:layout_height="wrap_content" 
+		android:layout_width="fill_parent"/>
+	<Button android:text="Done"
+		android:id="@+id/done"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent" />
+		
 </LinearLayout>

@@ -4,4 +4,10 @@
 		<item>Mph</item>
 		<item>Kph</item>
 	</array>
+	<!--  MUST BE QUOTED OF GOES APE SHIT -->
+	<array name="distances">
+		<item>"0.1"</item>
+		<item>"1.0"</item>
+		<item>"10.0"</item>
+	</array>
 </resources>

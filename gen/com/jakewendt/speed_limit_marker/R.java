@@ -9,6 +9,9 @@ package com.jakewendt.speed_limit_marker;
 
 public final class R {
     public static final class array {
+        /**   MUST BE QUOTED OF GOES APE SHIT 
+         */
+        public static final int distances=0x7f040001;
         public static final int units=0x7f040000;
     }
     public static final class attr {
@@ -21,6 +24,7 @@ public final class R {
         public static final int cog=0x7f060003;
         public static final int decrease=0x7f060000;
         public static final int distance=0x7f060004;
+        public static final int done=0x7f06000b;
         public static final int email_field=0x7f060009;
         public static final int increase=0x7f060001;
         public static final int latitude=0x7f060005;
@@ -38,6 +42,7 @@ public final class R {
         public static final int app_name=0x7f050001;
         public static final int back=0x7f050002;
         public static final int decrease=0x7f050004;
+        public static final int distance_label=0x7f05000a;
         public static final int email_text=0x7f050008;
         public static final int hello=0x7f050000;
         public static final int increase=0x7f050005;

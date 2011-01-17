@@ -195,11 +195,12 @@ public class SpeedLimitMarker extends Activity implements TextToSpeech.OnInitLis
 		// Returns the approximate distance in meters between this location and the given location.
 		distance = bearing_location.distanceTo(last_location);
 		distanceField.setText(Float.toString(distance));
-		if( distance > 0.1 ) {
+//		if( distance > 0.1 ) {
+		if( distance > Settings.distance ) {
 			last_bearing = bearing_location.bearingTo(last_location);
 			cogField.setText(Float.toString(last_bearing));
 			bearing_location = last_location;	
-		} else {
+//		} else {
 //			cogField.setText("---");
 		}
 //		bearing_location = last_location;	

@@ -12,5 +12,7 @@
 
 	<string name="username_text">Name (optional)</string>
 	<string name="email_text">Email (optional)</string>
-	<string name="units_text">Units</string>
+	<string name="units_text">Units (mph/kph)</string>
+	<string name="distance_label">Distance Threshold (meters)</string>
+
 </resources>
