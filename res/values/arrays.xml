@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<array name="units">
+		<item>Mph</item>
+		<item>Kph</item>
+	</array>
+</resources>

@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello World, SpeedLimitMarker!</string>
-    <string name="app_name">Speed Limit Marker</string>
+	<string name="hello">Hello World, SpeedLimitMarker!</string>
+	<string name="app_name">Speed Limit Marker</string>
 
-    <string name="back">Back</string>
-    <string name="clear">Clear</string>
+	<string name="back">Back</string>
+	<string name="settings">Settings</string>
 
-    <string name="decrease">Decrease</string>
-    <string name="increase">Increase</string>
-    <string name="mark">Mark</string>
+	<string name="decrease">Decrease</string>
+	<string name="increase">Increase</string>
+	<string name="mark">Mark</string>
+
+	<string name="username_text">Name (optional)</string>
+	<string name="email_text">Email (optional)</string>
+	<string name="units_text">Units</string>
 </resources>
