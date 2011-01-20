@@ -9,7 +9,7 @@ package com.jakewendt.speed_limit_marker;
 
 public final class R {
     public static final class array {
-        /**   MUST BE QUOTED OF GOES APE SHIT 
+        /**   MUST BE QUOTED OR GOES APE SHIT 
          */
         public static final int distances=0x7f040001;
         public static final int units=0x7f040000;

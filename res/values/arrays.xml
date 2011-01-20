@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<array name="units">
-		<item>Mph</item>
-		<item>Kph</item>
+		<item>MPH</item>
+		<item>KPH</item>
 	</array>
-	<!--  MUST BE QUOTED OF GOES APE SHIT -->
+	<!--  MUST BE QUOTED OR GOES APE SHIT -->
 	<array name="distances">
-		<item>"0.1"</item>
 		<item>"1.0"</item>
 		<item>"10.0"</item>
+		<item>"20.0"</item>
+		<item>"30.0"</item>
 	</array>
 </resources>

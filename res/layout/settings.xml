@@ -15,7 +15,7 @@
 		android:layout_weight="1.0"
 		android:lines="1"
 		android:inputType="textUri"
-		android:imeOptions="actionGo" />
+		android:imeOptions="actionGo"/>
 
 	<TextView android:text="@string/email_text"
 		android:layout_height="wrap_content" 

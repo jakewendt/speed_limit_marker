@@ -14,7 +14,7 @@ import android.view.View.OnClickListener;
 import android.widget.TextView;
 import android.widget.Button;
 import android.content.Intent;
-import android.content.SharedPreferences;
+//import android.content.SharedPreferences;
 import android.content.Context;
 import android.location.Location;
 import android.location.LocationListener;
@@ -23,24 +23,26 @@ import android.util.Log;
 
 import java.util.ArrayList;
 
-import org.apache.http.client.ClientProtocolException;
+//import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.NameValuePair;
-import org.apache.http.HttpResponse;
-import org.apache.http.HttpEntity;
-import org.apache.http.impl.client.DefaultHttpClient;
+//import org.apache.http.HttpResponse;
+//import org.apache.http.HttpEntity;
+//import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpPost;
-import org.apache.http.client.HttpClient;
-import java.util.ArrayList;
+//import org.apache.http.client.HttpClient;
+//import java.util.ArrayList;
 import java.util.List;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.UnsupportedEncodingException;
-import android.util.TypedValue;
+//import java.io.IOException;
+//import java.io.OutputStream;
+//import java.io.ByteArrayOutputStream;
+//import java.io.UnsupportedEncodingException;
+//import android.util.TypedValue;
+
+
 public class SpeedLimitMarker extends Activity implements TextToSpeech.OnInitListener {
 
 	private static final String TAG = "SpeedLimit";
@@ -103,23 +105,14 @@ public class SpeedLimitMarker extends Activity implements TextToSpeech.OnInitLis
 		locationManager =(LocationManager) getSystemService(Context.LOCATION_SERVICE);
 		// public void requestLocationUpdates (String provider, long minTime, float minDistance, PendingIntent intent)
 		locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 1000,
-				0, new LocationUpdateHandler());
+				1, new LocationUpdateHandler());
 
 		((Button) findViewById(R.id.decrease)).setOnClickListener(mDecreaseListener);
 		((Button) findViewById(R.id.increase)).setOnClickListener(mIncreaseListener);
 		((Button) findViewById(R.id.mark)).setOnClickListener(mMarkListener);
-//		((Button) findViewById(R.id.showlocation)).setOnClickListener(mShowListener);
 
 		update_settings_view(this);
 		refresh_speed();
-
-/*
-		TextView sl = (TextView) findViewById(R.id.speedlimit);
-		Log.d(TAG,"Bottom " + Integer.toString(sl.getBottom()));
-		Log.d(TAG,"PaddingBottom " + Integer.toString(sl.getPaddingBottom()));
-		Log.d(TAG,"LineHeight " + Integer.toString(sl.getLineHeight()));
-		sl.setTextSize(TypedValue.COMPLEX_UNIT_SP,192);
-*/
 	}
 
 	public void update_settings_view(Context context) {
@@ -195,16 +188,11 @@ public class SpeedLimitMarker extends Activity implements TextToSpeech.OnInitLis
 		// Returns the approximate distance in meters between this location and the given location.
 		distance = bearing_location.distanceTo(last_location);
 		distanceField.setText(Float.toString(distance));
-//		if( distance > 0.1 ) {
 		if( distance > Settings.distance ) {
 			last_bearing = bearing_location.bearingTo(last_location);
 			cogField.setText(Float.toString(last_bearing));
 			bearing_location = last_location;	
-//		} else {
-//			cogField.setText("---");
 		}
-//		bearing_location = last_location;	
-//		tts.speak("Set location",TextToSpeech.QUEUE_FLUSH, null);
 	}
 
 	public void refresh_speed() {
@@ -278,8 +266,8 @@ public class SpeedLimitMarker extends Activity implements TextToSpeech.OnInitLis
 					formparams.add(new BasicNameValuePair("memail", Settings.email));
 	
 					UrlEncodedFormEntity entity = new UrlEncodedFormEntity(formparams, "UTF-8");
-//					HttpPost httppost = new HttpPost("http://www.wikispeedia.org/a/process_submit_bb.php");
-					HttpPost httppost = new HttpPost("http://wherewasi.jakewendt.com/markers");
+					HttpPost httppost = new HttpPost("http://www.wikispeedia.org/a/process_submit_bb.php");
+//					HttpPost httppost = new HttpPost("http://wherewasi.jakewendt.com/markers");
 					httppost.setEntity(entity);
 					httpclient.execute(httppost);
 

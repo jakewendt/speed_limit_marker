@@ -85,9 +85,9 @@ public class Settings extends Activity {
 			mph_kph = settings.getBoolean("mph_kph", true);
 			speed_limit = settings.getInt("speed_limit", 25);
 			Log.d(TAG,"SpeedLimit " + Integer.toString(speed_limit));
-			distance_index = settings.getInt("distance_index", 0);
+			distance_index = settings.getInt("distance_index", 2);
 			Log.d(TAG,"Distance Index" + Integer.toString(distance_index));
-			distance = settings.getFloat("distance", (float) 1.0);
+			distance = settings.getFloat("distance", (float) 10);
 			Log.d(TAG,"Distance " + Float.toString(distance));
 			settings_read = true;
 		}
